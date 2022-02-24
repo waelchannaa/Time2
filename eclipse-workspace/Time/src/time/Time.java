@@ -27,14 +27,17 @@ public class Time
 		try
 		{
 			
-		String time = JOptionPane.showInputDialog(null,
+		String time = "10:10:10";
+				
+/*				JOptionPane.showInputDialog(null,
 			"Enter a time in the format hh:mm:ss", "Enter Time",
 			JOptionPane.QUESTION_MESSAGE);
-		
+*/		
 		int totalSeconds = getTotalSeconds(time);
-		JOptionPane.showMessageDialog(null, totalSeconds, "Total Seconds",
+/*		JOptionPane.showMessageDialog(null, totalSeconds, "Total Seconds",
 			JOptionPane.INFORMATION_MESSAGE);
 		}
+*/
 		catch(StringIndexOutOfBoundsException e)
 		{
 			JOptionPane.showMessageDialog(null,
