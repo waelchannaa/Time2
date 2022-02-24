@@ -22,22 +22,25 @@ import javax.swing.JOptionPane;
 
 public class Time
 {
+	
+	public static void main(String[] args) {
+		int totalSeconds = getTotalSeconds("10:10:10");
+		System.out.println("Total Seconds = "+totalSeconds);
+	}
+	/*
 	public static void main(String[] args) 
 	{
 		try
 		{
 			
-		String time = "10:10:10";
-				
-/*				JOptionPane.showInputDialog(null,
+		String time = JOptionPane.showInputDialog(null,
 			"Enter a time in the format hh:mm:ss", "Enter Time",
 			JOptionPane.QUESTION_MESSAGE);
-*/		
+		
 		int totalSeconds = getTotalSeconds(time);
-/*		JOptionPane.showMessageDialog(null, totalSeconds, "Total Seconds",
+		JOptionPane.showMessageDialog(null, totalSeconds, "Total Seconds",
 			JOptionPane.INFORMATION_MESSAGE);
 		}
-*/
 		catch(StringIndexOutOfBoundsException e)
 		{
 			JOptionPane.showMessageDialog(null,
@@ -56,7 +59,7 @@ public class Time
 			System.out.println("An unexpected Exception occurred");
 		}
 	}
-
+*/
 	public static int getTotalSeconds(String time)throws NumberFormatException, StringIndexOutOfBoundsException {
 		
 		int hours = getTotalHours(time);
