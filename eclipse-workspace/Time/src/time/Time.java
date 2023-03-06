@@ -19,14 +19,14 @@ import javax.swing.JOptionPane;
  * for the testing exercise with JUnit
  *  Winter 2021
  */
-
 public class Time
 {
 	
 	public static void main(String[] args) {
 		int totalSeconds = getTotalSeconds("10:10:10");
-		System.out.println("Github3 Total Seconds = "+totalSeconds);
+		System.out.println("Total seconds is "+totalSeconds);
 	}
+	
 	/*
 	public static void main(String[] args) 
 	{
@@ -59,7 +59,8 @@ public class Time
 			System.out.println("An unexpected Exception occurred");
 		}
 	}
-*/
+	*/
+
 	public static int getTotalSeconds(String time)throws NumberFormatException, StringIndexOutOfBoundsException {
 		
 		int hours = getTotalHours(time);
@@ -88,12 +89,6 @@ public class Time
 	{
 		return Integer.parseInt(time.substring(0,2));
 	}
-
-	public static int getMilliseconds(String string) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
 	
 }
 
