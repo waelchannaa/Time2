@@ -26,26 +26,5 @@ class TimeTest {
 				()->{Time.getTotalSeconds("10:00");});
 	}
 
-	@Test
-	void testGetTotalSeconds() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testGetSeconds() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testGetTotalMinutes() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testGetTotalHours() {
-		fail("Not yet implemented");
-	}
-	
-	
 	
 }
